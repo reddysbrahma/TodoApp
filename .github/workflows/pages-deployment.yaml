@@ -14,7 +14,7 @@ jobs:
       - name: Publish
         uses: cloudflare/pages-action@1
         with:
-          apiToken: uzTJ7Utj8qUdlF2US6sh8PFOB5krXv6RTew2tCP4
-          accountId: 7e97f7aa2efdef8a1685a92f15feecc5
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: todotest
           directory: dist
